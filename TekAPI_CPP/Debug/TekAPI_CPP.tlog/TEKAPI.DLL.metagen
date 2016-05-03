@@ -1,0 +1,206 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly TekAPI, Version=1.3.*, Culture=不因語言而異 (不因國別而異): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly TekHardware, Version=1.0.*, Culture=不因語言而異 (不因國別而異): 
+	hash=None, flags=None
+Assembly TekData, Version=1.0.*, Culture=不因語言而異 (不因國別而異): 
+	hash=None, flags=None
+Assembly tlllw32, Version=0.0.*, Culture=不因語言而異 (不因國別而異): 
+	hash=None, flags=None
+Interface TekAPI.ICTekAPI: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    ITekInitializeHardware(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekEnumerateWifiHubs(String[]&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekConnectToWifiHub(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekEnumerateWifiHandles(String, String[]&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekGetMinimumFramePeriodUS(Int64&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekStartHighSpeedCapture(Int64): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekStopHighSpeedCapture(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekEnumerateHandles(String[]&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekClaimSensor(String[]&, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekClaimRightSideSensor(String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekClaimLeftSideSensor(String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekCaptureDataFrame(String, Int32, Byte[]&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekCaptureHSDataFrame(String, Byte[]&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekGetSensorRows(String, Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekGetSensorRowSpacing(String, Double&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekGetSensorColumns(String, Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekGetSensorColumnSpacing(String, Double&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekSetSensitivityLevel(String, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekSetCalibratedSensitivity(String, CTekCalibration): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekReleaseSensor(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekDeinitializeHardware(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekInitializeSensor(String, Int64): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekStartRecording(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekIsRecording(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekStopRecording(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekSaveRecording(String, String&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekSaveRecording(String, String&, CTekEquilibration): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekSaveRecording(String, String&, CTekCalibration): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekSaveRecording(String, String&, CTekEquilibration, CTekCalibration): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekGetFramesToRecord(String, Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekGetFramesRecorded(String, Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekSetMapFileDirectory(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekLoadRecording(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekLoadEquilibration(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekLoadCalibration(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekGetLastError(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekEnableLogging(String(Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ITekDisableLogging(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TekAPI.CTekAPI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    TekAPI.ICTekAPI
+  Fields:
+    Int32 TEK_OK = 0 : Public, Static, Literal, HasDefault
+    Int32 TEK_FAIL = 1 : Public, Static, Literal, HasDefault
+    Int32 TEK_ERROR = 2 : Public, Static, Literal, HasDefault
+  Methods:
+    TekInitializeHardware(): PrivateScope, Public, Static, HideBySig
+    ITekInitializeHardware(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekEnumerateWifiHubs(String[]&(Out)): PrivateScope, Public, Static, HideBySig
+    ITekEnumerateWifiHubs(String[]&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekConnectToWifiHub(String): PrivateScope, Public, Static, HideBySig
+    ITekConnectToWifiHub(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekEnumerateWifiHandles(String, String[]&(Out)): PrivateScope, Public, Static, HideBySig
+    ITekEnumerateWifiHandles(String, String[]&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetMinimumFramePeriodUS(Int64&(Out)): PrivateScope, Public, Static, HideBySig
+    ITekGetMinimumFramePeriodUS(Int64&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekStartHighSpeedCapture(Int64): PrivateScope, Public, Static, HideBySig
+    ITekStartHighSpeedCapture(Int64): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekStopHighSpeedCapture(): PrivateScope, Public, Static, HideBySig
+    ITekStopHighSpeedCapture(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekEnumerateHandles(String[]&(Out)): PrivateScope, Public, Static, HideBySig
+    ITekEnumerateHandles(String[]&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekClaimSensor(String[]&, String): PrivateScope, Public, Static, HideBySig
+    ITekClaimSensor(String[]&, String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekClaimRightSideSensor(String, String): PrivateScope, Public, Static, HideBySig
+    ITekClaimRightSideSensor(String, String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekClaimLeftSideSensor(String, String): PrivateScope, Public, Static, HideBySig
+    ITekClaimLeftSideSensor(String, String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekCaptureDataFrame(String, Int32, Byte[]&(Out)): PrivateScope, Public, Static, HideBySig
+    ITekCaptureDataFrame(String, Int32, Byte[]&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekCaptureHSDataFrame(String, Byte[]&(Out)): PrivateScope, Public, Static, HideBySig
+    ITekCaptureHSDataFrame(String, Byte[]&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetSensorRows(String, Int32&(Out)): PrivateScope, Public, Static, HideBySig
+    ITekGetSensorRows(String, Int32&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetSensorRowSpacing(String, Double&(Out)): PrivateScope, Public, Static, HideBySig
+    ITekGetSensorRowSpacing(String, Double&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetSensorColumns(String, Int32&(Out)): PrivateScope, Public, Static, HideBySig
+    ITekGetSensorColumns(String, Int32&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetSensorColumnSpacing(String, Double&(Out)): PrivateScope, Public, Static, HideBySig
+    ITekGetSensorColumnSpacing(String, Double&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekSetSensitivityLevel(String, Int32): PrivateScope, Public, Static, HideBySig
+    ITekSetSensitivityLevel(String, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekSetCalibratedSensitivity(String, CTekCalibration): PrivateScope, Public, Static, HideBySig
+    ITekSetCalibratedSensitivity(String, CTekCalibration): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekReleaseSensor(String): PrivateScope, Public, Static, HideBySig
+    ITekReleaseSensor(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekDeinitializeHardware(): PrivateScope, Public, Static, HideBySig
+    ITekDeinitializeHardware(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekInitializeSensor(String, Int64): PrivateScope, Public, Static, HideBySig
+    ITekInitializeSensor(String, Int64): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekStartRecording(Double): PrivateScope, Public, Static, HideBySig
+    ITekStartRecording(Double): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekIsRecording(): PrivateScope, Public, Static, HideBySig
+    ITekIsRecording(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekStopRecording(): PrivateScope, Public, Static, HideBySig
+    ITekStopRecording(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekSaveRecording(String, String&): PrivateScope, Public, Static, HideBySig
+    ITekSaveRecording(String, String&): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekSaveRecording(String, String&, CTekEquilibration): PrivateScope, Public, Static, HideBySig
+    ITekSaveRecording(String, String&, CTekEquilibration): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekSaveRecording(String, String&, CTekCalibration): PrivateScope, Public, Static, HideBySig
+    ITekSaveRecording(String, String&, CTekCalibration): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekSaveRecording(String, String&, CTekEquilibration, CTekCalibration): PrivateScope, Public, Static, HideBySig
+    ITekSaveRecording(String, String&, CTekEquilibration, CTekCalibration): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetFramesToRecord(String, Int32&(Out)): PrivateScope, Public, Static, HideBySig
+    ITekGetFramesToRecord(String, Int32&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetFramesRecorded(String, Int32&(Out)): PrivateScope, Public, Static, HideBySig
+    ITekGetFramesRecorded(String, Int32&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekSetMapFileDirectory(String): PrivateScope, Public, Static, HideBySig
+    ITekSetMapFileDirectory(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekLoadRecording(String): PrivateScope, Public, Static, HideBySig
+    ITekLoadRecording(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekLoadEquilibration(String): PrivateScope, Public, Static, HideBySig
+    ITekLoadEquilibration(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekLoadCalibration(String): PrivateScope, Public, Static, HideBySig
+    ITekLoadCalibration(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetLastError(): PrivateScope, Public, Static, HideBySig
+    ITekGetLastError(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekEnableLogging(String(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    ITekEnableLogging(String(Optional, HasDefault)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekDisableLogging(): PrivateScope, Public, Static, HideBySig
+    ITekDisableLogging(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Interface TekAPI.ICTekCalibration: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    TekCalibrate(Byte[], Double[]&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TekAPI.CTekCalibration: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Interfaces:
+    TekAPI.ICTekCalibration
+  Methods:
+    TekCalibrate(Byte[], Double[]&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Interface TekAPI.ICTekEquilibration: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    TekEquilibrate(Byte[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TekAPI.CTekEquilibration: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Interfaces:
+    TekAPI.ICTekEquilibration
+  Methods:
+    TekEquilibrate(Byte[]): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Interface TekAPI.ICTekFile: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    TekApplyCalibration(CTekCalibration): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TekApplyEquilibration(CTekEquilibration): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TekClearCalibration(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TekClearEquilibration(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TekGetActiveFrame(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TekGetAnalogUnits(String&(Out), Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TekGetAnalogValue(Double&(Out), Int32, Int32(Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TekGetCalibratedFrameData(Double[]&(Out), Int32(Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TekGetCalibration(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TekGetColumns(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TekGetColumnSpacing(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TekGetEquilibration(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TekGetFrameCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TekGetFrameFiletime(UInt64&(Out), Int32(Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TekGetFrameTimestamp(Double&(Out), Int32(Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TekGetPeakFrameData(Byte[]&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TekGetRawFrameData(Byte[]&(Out), Int32(Optional, HasDefault)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TekGetRecordingSensitivity(Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TekGetRows(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TekGetRowSpacing(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TekSetActiveFrame(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class TekAPI.CTekFile: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Interfaces:
+    TekAPI.ICTekFile
+  Methods:
+    TekGetRowSpacing(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetColumnSpacing(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetRecordingSensitivity(Int32&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetPeakFrameData(Byte[]&(Out)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetFrameTimestamp(Double&(Out), Int32(Optional, HasDefault)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetFrameFiletime(UInt64&(Out), Int32(Optional, HasDefault)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetAnalogValue(Double&(Out), Int32, Int32(Optional, HasDefault)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetAnalogUnits(String&(Out), Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetRawFrameData(Byte[]&(Out), Int32(Optional, HasDefault)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetCalibratedFrameData(Double[]&(Out), Int32(Optional, HasDefault)): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetRows(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetColumns(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetFrameCount(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetActiveFrame(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekSetActiveFrame(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekApplyEquilibration(CTekEquilibration): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekClearEquilibration(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetEquilibration(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekApplyCalibration(CTekCalibration): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekClearCalibration(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    TekGetCalibration(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class TekAPI.CTekVersion: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    TekGetVersion(): PrivateScope, Public, Static, HideBySig
+    TekGetSerialNumberString(): PrivateScope, Public, Static, HideBySig
+    TekGetUserName(): PrivateScope, Public, Static, HideBySig

@@ -1,0 +1,57 @@
+﻿已經開始建置於 2016/3/11 下午 02:11:39。
+     1>節點 2 (Build 目標) 上的專案 "C:\Users\Robotlab\Desktop\TekAPI_CPP\TekAPI_CPP\TekAPI_CPP.vcxproj"。
+     1>C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets(1635,5): warning MSB3245: 無法解析此參考。找不到組件 "TekAPI"。請檢查以確定磁碟上有該組件。 如果程式碼需要此參考，可能會發生編譯錯誤。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /EHa /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.CSharp.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.DataSetExtensions.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.Linq.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Deployment.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.Linq.dll" /analyze- /errorReport:prompt /clr:nostdlib TekAPI.cpp
+         TekAPI.cpp
+     1>TekAPI.cpp(14): error C2871: 'TekAPI' : 此名稱的命名空間不存在
+     1>TekAPI.cpp(28): error C2653: 'CTekAPI' : 不是類別或命名空間名稱
+     1>TekAPI.cpp(28): error C3861: 'TekSetMapFileDirectory': 找不到識別項
+     1>TekAPI.cpp(31): error C2065: 'CTekEquilibration' : 未宣告的識別項
+     1>TekAPI.cpp(31): error C2065: 'equilibration' : 未宣告的識別項
+     1>TekAPI.cpp(31): error C2653: 'CTekAPI' : 不是類別或命名空間名稱
+     1>TekAPI.cpp(31): error C3861: 'TekLoadEquilibration': 找不到識別項
+     1>TekAPI.cpp(32): error C2065: 'CTekCalibration' : 未宣告的識別項
+     1>TekAPI.cpp(32): error C2065: 'calibration' : 未宣告的識別項
+     1>TekAPI.cpp(32): error C2653: 'CTekAPI' : 不是類別或命名空間名稱
+     1>TekAPI.cpp(32): error C3861: 'TekLoadCalibration': 找不到識別項
+     1>TekAPI.cpp(36): error C2653: 'CTekAPI' : 不是類別或命名空間名稱
+     1>TekAPI.cpp(36): error C3861: 'TekInitializeHardware': 找不到識別項
+     1>TekAPI.cpp(40): error C2653: 'CTekAPI' : 不是類別或命名空間名稱
+     1>TekAPI.cpp(40): error C3861: 'TekEnumerateHandles': 找不到識別項
+     1>TekAPI.cpp(47): error C2653: 'CTekAPI' : 不是類別或命名空間名稱
+     1>TekAPI.cpp(47): error C3861: 'TekClaimSensor': 找不到識別項
+     1>TekAPI.cpp(52): error C2653: 'CTekAPI' : 不是類別或命名空間名稱
+     1>TekAPI.cpp(52): error C3861: 'TekInitializeSensor': 找不到識別項
+     1>TekAPI.cpp(58): error C2653: 'CTekAPI' : 不是類別或命名空間名稱
+     1>TekAPI.cpp(58): error C3861: 'TekSetSensitivityLevel': 找不到識別項
+     1>TekAPI.cpp(59): error C2653: 'CTekAPI' : 不是類別或命名空間名稱
+     1>TekAPI.cpp(59): error C3861: 'TekGetLastError': 找不到識別項
+     1>TekAPI.cpp(73): error C2653: 'CTekAPI' : 不是類別或命名空間名稱
+     1>TekAPI.cpp(73): error C3861: 'TekGetSensorRows': 找不到識別項
+     1>TekAPI.cpp(74): error C2653: 'CTekAPI' : 不是類別或命名空間名稱
+     1>TekAPI.cpp(74): error C3861: 'TekGetSensorColumns': 找不到識別項
+     1>TekAPI.cpp(75): error C2653: 'CTekAPI' : 不是類別或命名空間名稱
+     1>TekAPI.cpp(75): error C3861: 'TekGetSensorRowSpacing': 找不到識別項
+     1>TekAPI.cpp(76): error C2653: 'CTekAPI' : 不是類別或命名空間名稱
+     1>TekAPI.cpp(76): error C3861: 'TekGetSensorColumnSpacing': 找不到識別項
+     1>TekAPI.cpp(81): error C2653: 'CTekAPI' : 不是類別或命名空間名稱
+     1>TekAPI.cpp(81): error C3861: 'TekCaptureDataFrame': 找不到識別項
+     1>TekAPI.cpp(106): error C2065: 'equilibration' : 未宣告的識別項
+     1>TekAPI.cpp(106): error C2227: '->TekEquilibrate' 的左邊必須指向類別/結構/等位/泛型類型
+                 類型為 'unknown-type'
+     1>TekAPI.cpp(110): error C2065: 'calibration' : 未宣告的識別項
+     1>TekAPI.cpp(110): error C2227: '->TekCalibrate' 的左邊必須指向類別/結構/等位/泛型類型
+                 類型為 'unknown-type'
+     1>TekAPI.cpp(113): error C2653: 'CTekAPI' : 不是類別或命名空間名稱
+     1>TekAPI.cpp(113): error C3861: 'TekStartRecording': 找不到識別項
+     1>TekAPI.cpp(118): error C2653: 'CTekAPI' : 不是類別或命名空間名稱
+     1>TekAPI.cpp(118): error C3861: 'TekGetFramesToRecord': 找不到識別項
+     1>TekAPI.cpp(122): error C2653: 'CTekAPI' : 不是類別或命名空間名稱
+     1>TekAPI.cpp(122): error C3861: 'TekIsRecording': 找不到識別項
+     1>TekAPI.cpp(122): fatal error C1903: 無法從先前的錯誤復原; 正在停止編譯
+     1>專案 "C:\Users\Robotlab\Desktop\TekAPI_CPP\TekAPI_CPP\TekAPI_CPP.vcxproj" (Build 目標) 建置完成 -- 失敗。
+
+建置失敗。
+
+經過時間 00:00:01.00
