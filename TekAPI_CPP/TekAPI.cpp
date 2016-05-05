@@ -47,6 +47,9 @@ int main()
 	InitPar();
 
 	initMega();
+
+	int HandFlag = 1;			// 0: right, 1: left
+
 	//if (mega.setComPort("\\\\.\\COM20"))
 	//	std::cout << "Arduino Mega 2560 Connected..." << std::endl;
 	//else{
@@ -83,11 +86,20 @@ int main()
     // Get lowest serial number to use as an identifier for future calls.
     String^ serialNumber = availableSerialNumbers[0]; // sensor with lowest serial number
 
+	String^ availableSerialNumbers1;
+	availableSerialNumbers1 = availableSerialNumbers[0];
     // The map file used here should match the type of sensor you are using.
 	String^ mapFilePath("D:\\Tactile Sensor Program\\TekAPI_CPP_160316\\TekAPI_CPP\\null2.mp");
-	CTekAPI::TekClaimSensor(availableSerialNumbers, mapFilePath);
-
-
+	//CTekAPI::TekClaimSensor(availableSerialNumbers, mapFilePath);
+	if (HandFlag == 0)
+	{
+		CTekAPI::TekClaimRightSideSensor(availableSerialNumbers1, mapFilePath);
+	}
+	else
+	{
+		CTekAPI::TekClaimLeftSideSensor(availableSerialNumbers1, mapFilePath);
+	}
+	
     // Set up the selected sensor
     long framePeriod = 10000; // controls the period in microseconds of data collection (1/frequency)
 	CTekAPI::TekInitializeSensor(serialNumber, framePeriod); // framePeriod in microseconds: 10000 microseconds = 100 Hz
@@ -223,12 +235,24 @@ int main()
 		MatrixXd m_thumb(8, 4);
 		MatrixXd m_other(12, 4);
 		MatrixXd StartAxisFingerBlock(6, 2);
-		StartAxisFingerBlock << 13, 5,
-			15, 0,
-			0, 6,
-			0, 11,
-			0, 16,
-			0, 21;
+		if (HandFlag == 0)
+		{
+			StartAxisFingerBlock << 13, 5,
+				15, 0,
+				0, 6,
+				0, 11,
+				0, 16,
+				0, 21;
+		}
+		else
+		{
+			StartAxisFingerBlock << 13, 0,
+				15, 21,
+				0, 15,
+				0, 10,
+				0, 5,
+				0, 0;
+		}
 
 		cv::Mat m_palm_cv(16, 20, CV_8UC1, Scalar(0));
 		cv::Mat m_thumb_cv(8, 4, CV_8UC1, Scalar(0));
@@ -301,6 +325,7 @@ int main()
 		std::cout << test.pt_thumb.x << '\t' << test.pt_thumb.y << std::endl;
 #pragma endregion
 
+#pragma region 滑動偵測與資料轉換
 		//// slip detection by center moving
 		if (sqrt(pow((test.pt.x - before_point.x),2)+pow((test.pt.y - before_point.y),2)) > 4 && slip_count != 0)
 		{
@@ -330,6 +355,8 @@ int main()
 				m(i, j) = frameDataCalibrated[i * columns + j];
 			}
 		}
+#pragma endregion
+
 #pragma region 取得各區塊壓力數值 以及 各手指區域重心位置
 		MatrixXd mA(4, 4);
 		MatrixXd mB(3, 4);
@@ -338,23 +365,46 @@ int main()
 		MatrixXd mE(4, 19);
 
 		MatrixXd StartAxis(17, 2);
-		StartAxis << 20, 17,
-					24, 5,
-					13, 6,
-					20, 0,
-					15, 0,
-					9, 6,
-					5, 6,
-					0, 6,
-					9, 11,
-					5, 11,
-					0, 11,
-					9, 16,
-					5, 16,
-					0, 16,
-					9, 21,
-					5, 21,
-					0, 21;
+		if (HandFlag == 0)
+		{
+			StartAxis << 20, 17,
+				24, 5,
+				13, 6,
+				20, 0,
+				15, 0,
+				9, 6,
+				5, 6,
+				0, 6,
+				9, 11,
+				5, 11,
+				0, 11,
+				9, 16,
+				5, 16,
+				0, 16,
+				9, 21,
+				5, 21,
+				0, 21;
+		}
+		else
+		{
+			StartAxis << 20, 0,
+				24, 11,
+				13, 0,
+				20, 21,
+				15, 21,
+				9, 15,
+				5, 15,
+				0, 15,
+				9, 10,
+				5, 10,
+				0, 10,
+				9, 5,
+				5, 5,
+				0, 5,
+				9, 0,
+				5, 0,
+				0, 0;
+		}
 
 		for (int i = 0; i < 17; i++)
 		{
@@ -425,18 +475,6 @@ int main()
     
 	//marshal_context^ context = gcnew marshal_context();
 	//const char* c_s = context->marshal_as<const unsigned char*>(frameData[i]);
-
-	//for (int i = 0; i < frameData->Length; i++)
- //   {
- //       // Write data to console 
-	//	printf("%d ",frameData[i]);
-
- //       // If next element is the start of a new column, start a new line
- //       if ((i + 1) % columns == 0)
- //       {
-	//		printf("\n");
- //       }
- //   }
 
     //// Apply calibration and equilibration to frame data (optional)
     //equilibration->TekEquilibrate(frameData); // passed by reference, data is now equilibrated

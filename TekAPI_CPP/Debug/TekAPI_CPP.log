@@ -1,5 +1,5 @@
-﻿已經開始建置於 2016/4/28 下午 03:54:22。
-     1>節點 2 (Build 目標) 上的專案 "D:\Tactile Sensor Program\TekAPI_CPP_160425\TekAPI_CPP\TekAPI_CPP.vcxproj"。
+﻿已經開始建置於 2016/5/4 下午 05:23:53。
+     1>節點 2 (Build 目標) 上的專案 "D:\Vision Control Program\TekAPI_CPP\TekAPI_CPP\TekAPI_CPP.vcxproj"。
      1>ClCompile:
          D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FUC:\Tekscan\TekAPI\TekAPI.dll /analyze- /errorReport:prompt /clr:nostdlib TekAPI.cpp
          TekAPI.cpp
@@ -9,120 +9,120 @@
      1>TekAPI.cpp(15): warning C4067: 未預期的語彙基元，接著前置處理器指示詞 - 必須是新行
      1>TekAPI.cpp(17): warning C4067: 未預期的語彙基元，接著前置處理器指示詞 - 必須是新行
      1>TekAPI.cpp(19): warning C4067: 未預期的語彙基元，接著前置處理器指示詞 - 必須是新行
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\Driver.h(3): warning C4067: 未預期的語彙基元，接著前置處理器指示詞 - 必須是新行
-     1>TekAPI.cpp(196): warning C4244: '=' : 將 'float' 轉換為 'uchar'，由於類型不同，可能導致資料遺失
-     1>TekAPI.cpp(197): warning C4244: '=' : 將 'float' 轉換為 'uchar'，由於類型不同，可能導致資料遺失
-     1>TekAPI.cpp(201): warning C4244: '正在初始化' : 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
-     1>TekAPI.cpp(206): warning C4244: '=' : 將 'float' 轉換為 'uchar'，由於類型不同，可能導致資料遺失
-     1>TekAPI.cpp(207): warning C4244: '=' : 將 'float' 轉換為 'uchar'，由於類型不同，可能導致資料遺失
-     1>TekAPI.cpp(244): warning C4244: '引數' : 將 'double' 轉換為 '__w64 int'，由於類型不同，可能導致資料遺失
-     1>TekAPI.cpp(249): warning C4244: '=' : 將 'double' 轉換為 'byte'，由於類型不同，可能導致資料遺失
-     1>TekAPI.cpp(256): warning C4244: '引數' : 將 'double' 轉換為 '__w64 int'，由於類型不同，可能導致資料遺失
-     1>TekAPI.cpp(261): warning C4244: '=' : 將 'double' 轉換為 'byte'，由於類型不同，可能導致資料遺失
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\Driver.h(3): warning C4067: 未預期的語彙基元，接著前置處理器指示詞 - 必須是新行
+     1>TekAPI.cpp(208): warning C4244: '=' : 將 'float' 轉換為 'uchar'，由於類型不同，可能導致資料遺失
+     1>TekAPI.cpp(209): warning C4244: '=' : 將 'float' 轉換為 'uchar'，由於類型不同，可能導致資料遺失
+     1>TekAPI.cpp(213): warning C4244: '正在初始化' : 將 'int' 轉換為 'float'，由於類型不同，可能導致資料遺失
+     1>TekAPI.cpp(218): warning C4244: '=' : 將 'float' 轉換為 'uchar'，由於類型不同，可能導致資料遺失
+     1>TekAPI.cpp(219): warning C4244: '=' : 將 'float' 轉換為 'uchar'，由於類型不同，可能導致資料遺失
      1>TekAPI.cpp(268): warning C4244: '引數' : 將 'double' 轉換為 '__w64 int'，由於類型不同，可能導致資料遺失
      1>TekAPI.cpp(273): warning C4244: '=' : 將 'double' 轉換為 'byte'，由於類型不同，可能導致資料遺失
-     1>TekAPI.cpp(363): warning C4244: '引數' : 將 'double' 轉換為 '__w64 int'，由於類型不同，可能導致資料遺失
-     1>TekAPI.cpp(369): warning C4244: '引數' : 將 'double' 轉換為 '__w64 int'，由於類型不同，可能導致資料遺失
-     1>TekAPI.cpp(375): warning C4244: '引數' : 將 'double' 轉換為 '__w64 int'，由於類型不同，可能導致資料遺失
-     1>TekAPI.cpp(381): warning C4244: '引數' : 將 'double' 轉換為 '__w64 int'，由於類型不同，可能導致資料遺失
-     1>TekAPI.cpp(389): warning C4244: '引數' : 將 'double' 轉換為 '__w64 int'，由於類型不同，可能導致資料遺失
-     1>TekAPI.cpp(406): warning C4244: '引數' : 將 'double' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
-     1>TekAPI.cpp(408): warning C4244: '引數' : 將 'double' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
-     1>TekAPI.cpp(409): warning C4244: '引數' : 將 'double' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
-     1>TekAPI.cpp(414): warning C4244: '引數' : 將 'double' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\redux.h(216): warning C4793: 'Eigen::internal::redux_impl<Eigen::internal::scalar_sum_op<double>,Eigen::Matrix<double,-1,-1,0,-1,-1>,3,0>::run' : 函式以機器碼編譯 :
+     1>TekAPI.cpp(280): warning C4244: '引數' : 將 'double' 轉換為 '__w64 int'，由於類型不同，可能導致資料遺失
+     1>TekAPI.cpp(285): warning C4244: '=' : 將 'double' 轉換為 'byte'，由於類型不同，可能導致資料遺失
+     1>TekAPI.cpp(292): warning C4244: '引數' : 將 'double' 轉換為 '__w64 int'，由於類型不同，可能導致資料遺失
+     1>TekAPI.cpp(297): warning C4244: '=' : 將 'double' 轉換為 'byte'，由於類型不同，可能導致資料遺失
+     1>TekAPI.cpp(413): warning C4244: '引數' : 將 'double' 轉換為 '__w64 int'，由於類型不同，可能導致資料遺失
+     1>TekAPI.cpp(419): warning C4244: '引數' : 將 'double' 轉換為 '__w64 int'，由於類型不同，可能導致資料遺失
+     1>TekAPI.cpp(425): warning C4244: '引數' : 將 'double' 轉換為 '__w64 int'，由於類型不同，可能導致資料遺失
+     1>TekAPI.cpp(431): warning C4244: '引數' : 將 'double' 轉換為 '__w64 int'，由於類型不同，可能導致資料遺失
+     1>TekAPI.cpp(439): warning C4244: '引數' : 將 'double' 轉換為 '__w64 int'，由於類型不同，可能導致資料遺失
+     1>TekAPI.cpp(456): warning C4244: '引數' : 將 'double' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
+     1>TekAPI.cpp(458): warning C4244: '引數' : 將 'double' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
+     1>TekAPI.cpp(459): warning C4244: '引數' : 將 'double' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
+     1>TekAPI.cpp(464): warning C4244: '引數' : 將 'double' 轉換為 'unsigned int'，由於類型不同，可能導致資料遺失
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\redux.h(216): warning C4793: 'Eigen::internal::redux_impl<Eigen::internal::scalar_sum_op<double>,Eigen::Matrix<double,-1,-1,0,-1,-1>,3,0>::run' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\redux.h(219): warning C4793: 'Eigen::internal::redux_impl<Eigen::internal::scalar_sum_op<double>,Eigen::Matrix<double,-1,-1,0,-1,-1>,3,0>::run' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\redux.h(219): warning C4793: 'Eigen::internal::redux_impl<Eigen::internal::scalar_sum_op<double>,Eigen::Matrix<double,-1,-1,0,-1,-1>,3,0>::run' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\redux.h(222): warning C4793: 'Eigen::internal::redux_impl<Eigen::internal::scalar_sum_op<double>,Eigen::Matrix<double,-1,-1,0,-1,-1>,3,0>::run' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\redux.h(222): warning C4793: 'Eigen::internal::redux_impl<Eigen::internal::scalar_sum_op<double>,Eigen::Matrix<double,-1,-1,0,-1,-1>,3,0>::run' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\redux.h(223): warning C4793: 'Eigen::internal::redux_impl<Eigen::internal::scalar_sum_op<double>,Eigen::Matrix<double,-1,-1,0,-1,-1>,3,0>::run' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\redux.h(223): warning C4793: 'Eigen::internal::redux_impl<Eigen::internal::scalar_sum_op<double>,Eigen::Matrix<double,-1,-1,0,-1,-1>,3,0>::run' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\redux.h(226): warning C4793: 'Eigen::internal::redux_impl<Eigen::internal::scalar_sum_op<double>,Eigen::Matrix<double,-1,-1,0,-1,-1>,3,0>::run' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\redux.h(226): warning C4793: 'Eigen::internal::redux_impl<Eigen::internal::scalar_sum_op<double>,Eigen::Matrix<double,-1,-1,0,-1,-1>,3,0>::run' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\redux.h(228): warning C4793: 'Eigen::internal::redux_impl<Eigen::internal::scalar_sum_op<double>,Eigen::Matrix<double,-1,-1,0,-1,-1>,3,0>::run' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\redux.h(228): warning C4793: 'Eigen::internal::redux_impl<Eigen::internal::scalar_sum_op<double>,Eigen::Matrix<double,-1,-1,0,-1,-1>,3,0>::run' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\redux.h(247): warning C4793: 'Eigen::internal::redux_impl<Eigen::internal::scalar_sum_op<double>,Eigen::Matrix<double,-1,-1,0,-1,-1>,3,0>::run' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\redux.h(247): warning C4793: 'Eigen::internal::redux_impl<Eigen::internal::scalar_sum_op<double>,Eigen::Matrix<double,-1,-1,0,-1,-1>,3,0>::run' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\densecoeffsbase.h(522): warning C4793: 'Eigen::DenseCoeffsBase<Eigen::Matrix<double,-1,-1,0,-1,-1>,1>::copyPacket<Eigen::Block<Eigen::Matrix<double,-1,-1,0,-1,-1>,16,20,0>,1,0>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\densecoeffsbase.h(522): warning C4793: 'Eigen::DenseCoeffsBase<Eigen::Matrix<double,-1,-1,0,-1,-1>,1>::copyPacket<Eigen::Block<Eigen::Matrix<double,-1,-1,0,-1,-1>,16,20,0>,1,0>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\densecoeffsbase.h(522): warning C4793: 'Eigen::DenseCoeffsBase<Eigen::Matrix<double,-1,-1,0,-1,-1>,1>::copyPacket<Eigen::Block<Eigen::Matrix<double,-1,-1,0,-1,-1>,8,4,0>,1,0>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\densecoeffsbase.h(522): warning C4793: 'Eigen::DenseCoeffsBase<Eigen::Matrix<double,-1,-1,0,-1,-1>,1>::copyPacket<Eigen::Block<Eigen::Matrix<double,-1,-1,0,-1,-1>,8,4,0>,1,0>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\densecoeffsbase.h(522): warning C4793: 'Eigen::DenseCoeffsBase<Eigen::Matrix<double,-1,-1,0,-1,-1>,1>::copyPacket<Eigen::Block<Eigen::Matrix<double,-1,-1,0,-1,-1>,12,4,0>,1,0>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\densecoeffsbase.h(522): warning C4793: 'Eigen::DenseCoeffsBase<Eigen::Matrix<double,-1,-1,0,-1,-1>,1>::copyPacket<Eigen::Block<Eigen::Matrix<double,-1,-1,0,-1,-1>,12,4,0>,1,0>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\densecoeffsbase.h(522): warning C4793: 'Eigen::DenseCoeffsBase<Eigen::Matrix<double,-1,-1,0,-1,-1>,1>::copyPacket<Eigen::Block<Eigen::Matrix<double,-1,-1,0,-1,-1>,4,4,0>,1,0>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\densecoeffsbase.h(522): warning C4793: 'Eigen::DenseCoeffsBase<Eigen::Matrix<double,-1,-1,0,-1,-1>,1>::copyPacket<Eigen::Block<Eigen::Matrix<double,-1,-1,0,-1,-1>,4,4,0>,1,0>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\densecoeffsbase.h(522): warning C4793: 'Eigen::DenseCoeffsBase<Eigen::Matrix<double,-1,-1,0,-1,-1>,1>::copyPacket<Eigen::Block<Eigen::Matrix<double,-1,-1,0,-1,-1>,4,19,0>,1,0>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\densecoeffsbase.h(522): warning C4793: 'Eigen::DenseCoeffsBase<Eigen::Matrix<double,-1,-1,0,-1,-1>,1>::copyPacket<Eigen::Block<Eigen::Matrix<double,-1,-1,0,-1,-1>,4,19,0>,1,0>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\densecoeffsbase.h(538): warning C4793: 'Eigen::DenseCoeffsBase<Eigen::Matrix<double,-1,-1,0,-1,-1>,1>::copyPacket<Eigen::Matrix<double,-1,-1,0,-1,-1>,1,1>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\densecoeffsbase.h(538): warning C4793: 'Eigen::DenseCoeffsBase<Eigen::Matrix<double,-1,-1,0,-1,-1>,1>::copyPacket<Eigen::Matrix<double,-1,-1,0,-1,-1>,1,1>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\plainobjectbase.h(191): warning C4793: 'Eigen::PlainObjectBase<Eigen::Matrix<double,-1,-1,0,-1,-1> >::packet<1>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\plainobjectbase.h(191): warning C4793: 'Eigen::PlainObjectBase<Eigen::Matrix<double,-1,-1,0,-1,-1> >::packet<1>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\functors.h(28): warning C4793: 'Eigen::internal::scalar_sum_op<double>::packetOp<__m128d>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\functors.h(28): warning C4793: 'Eigen::internal::scalar_sum_op<double>::packetOp<__m128d>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(394): warning C4793: 'Eigen::internal::predux<__m128d>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(394): warning C4793: 'Eigen::internal::predux<__m128d>' : 函式以機器碼編譯 :
          	找到 Managed 程式碼中不支援的內建
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(394): warning C4793: 'Eigen::internal::predux<__m128d>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(394): warning C4793: 'Eigen::internal::predux<__m128d>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\mapbase.h(116): warning C4793: 'Eigen::MapBase<Eigen::Block<Eigen::Matrix<double,-1,-1,0,-1,-1>,16,20,0>,0>::packet<0>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\mapbase.h(116): warning C4793: 'Eigen::MapBase<Eigen::Block<Eigen::Matrix<double,-1,-1,0,-1,-1>,16,20,0>,0>::packet<0>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(274): warning C4793: 'Eigen::internal::pstore<double,__m128d>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(274): warning C4793: 'Eigen::internal::pstore<double,__m128d>' : 函式以機器碼編譯 :
          	找到 Managed 程式碼中不支援的內建
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(274): warning C4793: 'Eigen::internal::pstore<double,__m128d>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(274): warning C4793: 'Eigen::internal::pstore<double,__m128d>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(279): warning C4793: 'Eigen::internal::pstoreu<double,__m128d>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(279): warning C4793: 'Eigen::internal::pstoreu<double,__m128d>' : 函式以機器碼編譯 :
          	找到 Managed 程式碼中不支援的內建
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(279): warning C4793: 'Eigen::internal::pstoreu<double,__m128d>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(279): warning C4793: 'Eigen::internal::pstoreu<double,__m128d>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(280): warning C4793: 'Eigen::internal::pstoreu<double,__m128d>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(280): warning C4793: 'Eigen::internal::pstoreu<double,__m128d>' : 函式以機器碼編譯 :
          	找到 Managed 程式碼中不支援的內建
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(280): warning C4793: 'Eigen::internal::pstoreu<double,__m128d>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(280): warning C4793: 'Eigen::internal::pstoreu<double,__m128d>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\mapbase.h(116): warning C4793: 'Eigen::MapBase<Eigen::Block<Eigen::Matrix<double,-1,-1,0,-1,-1>,8,4,0>,0>::packet<0>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\mapbase.h(116): warning C4793: 'Eigen::MapBase<Eigen::Block<Eigen::Matrix<double,-1,-1,0,-1,-1>,8,4,0>,0>::packet<0>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\mapbase.h(116): warning C4793: 'Eigen::MapBase<Eigen::Block<Eigen::Matrix<double,-1,-1,0,-1,-1>,12,4,0>,0>::packet<0>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\mapbase.h(116): warning C4793: 'Eigen::MapBase<Eigen::Block<Eigen::Matrix<double,-1,-1,0,-1,-1>,12,4,0>,0>::packet<0>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\mapbase.h(116): warning C4793: 'Eigen::MapBase<Eigen::Block<Eigen::Matrix<double,-1,-1,0,-1,-1>,4,4,0>,0>::packet<0>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\mapbase.h(116): warning C4793: 'Eigen::MapBase<Eigen::Block<Eigen::Matrix<double,-1,-1,0,-1,-1>,4,4,0>,0>::packet<0>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\mapbase.h(116): warning C4793: 'Eigen::MapBase<Eigen::Block<Eigen::Matrix<double,-1,-1,0,-1,-1>,4,19,0>,0>::packet<0>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\mapbase.h(116): warning C4793: 'Eigen::MapBase<Eigen::Block<Eigen::Matrix<double,-1,-1,0,-1,-1>,4,19,0>,0>::packet<0>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\genericpacketmath.h(290): warning C4793: 'Eigen::internal::ploadt<__m128d,1>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\genericpacketmath.h(290): warning C4793: 'Eigen::internal::ploadt<__m128d,1>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\genericpacketmath.h(292): warning C4793: 'Eigen::internal::ploadt<__m128d,1>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\genericpacketmath.h(292): warning C4793: 'Eigen::internal::ploadt<__m128d,1>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(123): warning C4793: 'Eigen::internal::padd<__m128d>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(123): warning C4793: 'Eigen::internal::padd<__m128d>' : 函式以機器碼編譯 :
          	找到 Managed 程式碼中不支援的內建
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(123): warning C4793: 'Eigen::internal::padd<__m128d>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(123): warning C4793: 'Eigen::internal::padd<__m128d>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(311): warning C4793: 'Eigen::internal::pfirst<__m128d>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(311): warning C4793: 'Eigen::internal::pfirst<__m128d>' : 函式以機器碼編譯 :
          	找到 Managed 程式碼中不支援的內建
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(311): warning C4793: 'Eigen::internal::pfirst<__m128d>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(311): warning C4793: 'Eigen::internal::pfirst<__m128d>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\genericpacketmath.h(290): warning C4793: 'Eigen::internal::ploadt<__m128d,0>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\genericpacketmath.h(290): warning C4793: 'Eigen::internal::ploadt<__m128d,0>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\genericpacketmath.h(292): warning C4793: 'Eigen::internal::ploadt<__m128d,0>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\genericpacketmath.h(292): warning C4793: 'Eigen::internal::ploadt<__m128d,0>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(220): warning C4793: 'Eigen::internal::pload<__m128d>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(220): warning C4793: 'Eigen::internal::pload<__m128d>' : 函式以機器碼編譯 :
          	找到 Managed 程式碼中不支援的內建
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(220): warning C4793: 'Eigen::internal::pload<__m128d>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(220): warning C4793: 'Eigen::internal::pload<__m128d>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(251): warning C4793: 'Eigen::internal::ploadu<__m128d>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(251): warning C4793: 'Eigen::internal::ploadu<__m128d>' : 函式以機器碼編譯 :
          	找到 Managed 程式碼中不支援的內建
-     1>d:\tactile sensor program\tekapi_cpp_160425\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(251): warning C4793: 'Eigen::internal::ploadu<__m128d>' : 函式以機器碼編譯 :
+     1>d:\vision control program\tekapi_cpp\tekapi_cpp\3rdparty\eigen\src\core\arch\sse\packetmath.h(251): warning C4793: 'Eigen::internal::ploadu<__m128d>' : 函式以機器碼編譯 :
          	在 Managed 程式碼中不支援對齊的資料類型
        Link:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Tactile Sensor Program\TekAPI_CPP_160425\Debug\TekAPI_CPP.exe" /INCREMENTAL /NOLOGO opencv_calib3d249d.lib opencv_contrib249d.lib opencv_core249d.lib opencv_features2d249d.lib opencv_flann249d.lib opencv_gpu249d.lib opencv_highgui249d.lib opencv_imgproc249d.lib opencv_legacy249d.lib opencv_ml249d.lib opencv_nonfree249d.lib opencv_objdetect249d.lib opencv_photo249d.lib opencv_stitching249d.lib opencv_ts249d.lib opencv_video249d.lib opencv_videostab249d.lib WinMM.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Tactile Sensor Program\TekAPI_CPP_160425\Debug\TekAPI_CPP.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\SlipControl.obj
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Vision Control Program\TekAPI_CPP\Debug\TekAPI_CPP.exe" /INCREMENTAL /NOLOGO opencv_calib3d249d.lib opencv_contrib249d.lib opencv_core249d.lib opencv_features2d249d.lib opencv_flann249d.lib opencv_gpu249d.lib opencv_highgui249d.lib opencv_imgproc249d.lib opencv_legacy249d.lib opencv_ml249d.lib opencv_nonfree249d.lib opencv_objdetect249d.lib opencv_photo249d.lib opencv_stitching249d.lib opencv_ts249d.lib opencv_video249d.lib opencv_videostab249d.lib WinMM.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Vision Control Program\TekAPI_CPP\Debug\TekAPI_CPP.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\SlipControl.obj
          Debug\Driver.obj
          Debug\SerialClass.obj
          Debug\TactileImage.obj
          Debug\TekAPI.obj
          "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
-     1>opencv_ts249d.lib(ts_gtest.obj) : warning LNK4099: 找不到 PDB 'opencv_ts249d.pdb' (有 'opencv_ts249d.lib(ts_gtest.obj)' 或位於 'D:\Tactile Sensor Program\TekAPI_CPP_160425\Debug\opencv_ts249d.pdb')，當做沒有偵錯資訊，連結物件
-     1>opencv_ts249d.lib(ts_perf.obj) : warning LNK4099: 找不到 PDB 'opencv_ts249d.pdb' (有 'opencv_ts249d.lib(ts_perf.obj)' 或位於 'D:\Tactile Sensor Program\TekAPI_CPP_160425\Debug\opencv_ts249d.pdb')，當做沒有偵錯資訊，連結物件
-     1>opencv_ts249d.lib(opencv_ts_pch.obj) : warning LNK4099: 找不到 PDB 'opencv_ts249d.pdb' (有 'opencv_ts249d.lib(opencv_ts_pch.obj)' 或位於 'D:\Tactile Sensor Program\TekAPI_CPP_160425\Debug\opencv_ts249d.pdb')，當做沒有偵錯資訊，連結物件
-         TekAPI_CPP.vcxproj -> D:\Tactile Sensor Program\TekAPI_CPP_160425\Debug\TekAPI_CPP.exe
-     1>專案 "D:\Tactile Sensor Program\TekAPI_CPP_160425\TekAPI_CPP\TekAPI_CPP.vcxproj" (Build 目標) 建置完成。
+     1>opencv_ts249d.lib(ts_gtest.obj) : warning LNK4099: 找不到 PDB 'opencv_ts249d.pdb' (有 'opencv_ts249d.lib(ts_gtest.obj)' 或位於 'D:\Vision Control Program\TekAPI_CPP\Debug\opencv_ts249d.pdb')，當做沒有偵錯資訊，連結物件
+     1>opencv_ts249d.lib(ts_perf.obj) : warning LNK4099: 找不到 PDB 'opencv_ts249d.pdb' (有 'opencv_ts249d.lib(ts_perf.obj)' 或位於 'D:\Vision Control Program\TekAPI_CPP\Debug\opencv_ts249d.pdb')，當做沒有偵錯資訊，連結物件
+     1>opencv_ts249d.lib(opencv_ts_pch.obj) : warning LNK4099: 找不到 PDB 'opencv_ts249d.pdb' (有 'opencv_ts249d.lib(opencv_ts_pch.obj)' 或位於 'D:\Vision Control Program\TekAPI_CPP\Debug\opencv_ts249d.pdb')，當做沒有偵錯資訊，連結物件
+         TekAPI_CPP.vcxproj -> D:\Vision Control Program\TekAPI_CPP\Debug\TekAPI_CPP.exe
+     1>專案 "D:\Vision Control Program\TekAPI_CPP\TekAPI_CPP\TekAPI_CPP.vcxproj" (Build 目標) 建置完成。
 
 建置成功。
 
-經過時間 00:00:02.78
+經過時間 00:00:02.83
